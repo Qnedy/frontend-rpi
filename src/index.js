@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import AppRoutes from '../src/router';
+import GlobalStyles from './styles/global';
+import ToggleTemaProvider from './providers/toggleTheme';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <ToggleTemaProvider>
+    <React.StrictMode>
+      <GlobalStyles />
+      <AppRoutes />
+    </React.StrictMode>
+  </ToggleTemaProvider>,
   document.getElementById('root')
 );
 
