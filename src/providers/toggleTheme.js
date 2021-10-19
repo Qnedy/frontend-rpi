@@ -11,10 +11,10 @@ const ToggleTemaProvider = ({ children }) => {
     const { frontendrpiTheme } = JSON.parse(themeStorage ? themeStorage : '{}');
 
     if(frontendrpiTheme === 'light'){
-      return light;
+      return dark;
     }
 
-    return dark;
+    return light;
   });
 
   const toggleTheme = () => {
