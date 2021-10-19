@@ -6,14 +6,22 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
 
-    .container {
-      min-width: 344px;
-      max-width: 344px;
-      height: 100vh;
-      margin: 0 auto;
+    .margin-bottom-36 {
+      margin-bottom: 36px;
+    }
+
+    .margin-top-10 {
+      margin-top: 10px;
+    }
+
+    .margin-top-15 {
+      margin-top: 15px;
+    }
+
+    .container--flex-end {
+      width: 100%;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      justify-content: flex-end;
     }
   }
 
@@ -21,6 +29,7 @@ export default createGlobalStyle`
     outline: none;
     margin: 0px;
     padding: 0px;
+    font-weight: 400;
     font-family: 'Roboto', sans-serif;
   }
 
