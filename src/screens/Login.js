@@ -23,7 +23,7 @@ const LoginScreen = () => {
       <form onSubmit={() => {}} >
         <Inputs 
           mode="normal" 
-          placeholder="example@example.com" 
+          placeholder="example@email.com" 
           icon={userIcon} 
           customClass="margin-bottom-36" 
           required={true}
