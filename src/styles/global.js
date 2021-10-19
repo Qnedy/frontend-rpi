@@ -10,6 +10,10 @@ export default createGlobalStyle`
       margin-bottom: 36px;
     }
 
+    .margin-top-5 {
+      margin-top: 5px;
+    }
+
     .margin-top-10 {
       margin-top: 10px;
     }
@@ -22,6 +26,28 @@ export default createGlobalStyle`
       width: 100%;
       display: flex;
       justify-content: flex-end;
+    }
+
+    .flex-container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .flex-container-column {
+      flex-direction: column;
+    }
+
+    .input--48-width {
+
+      div {
+        width: 48%;
+      }
+    }
+
+    .tip-color {
+      color: #767676;
     }
   }
 

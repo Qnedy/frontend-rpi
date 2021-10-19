@@ -36,6 +36,12 @@ export const InputContainer = styled.div`
   }
 `;
 
+export const InputWithoutIconContainer = styled(InputContainer)`
+  input {
+    padding: 0 15px;
+  }
+`;
+
 export const Icon = styled.div`
   position: absolute;
   left: 12px;

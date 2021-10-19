@@ -42,10 +42,5 @@ export const PageFooter = styled.footer`
     color: ${(props) => props.theme.textColors.sixth};
   }
 
-  .flex-container {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+  
 `;

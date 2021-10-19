@@ -12,6 +12,10 @@ const Inputs = ({ placeholder, mode, inputRef, customClass, icon, ...rest }) => 
             return (<styled.InputContainer ref={inputRef} className={`${customClass}`} >
               <input type="text" placeholder={placeholder} {...rest}/> <styled.Icon icon={icon} />
             </styled.InputContainer>);
+          case 'normal-without-icon':
+            return (<styled.InputWithoutIconContainer ref={inputRef} className={`${customClass}`} >
+              <input type="text" placeholder={placeholder} {...rest}/>
+            </styled.InputWithoutIconContainer>);
           default:
             return (<div></div>);
         }
