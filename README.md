@@ -17,6 +17,6 @@ You will also see any lint errors in the console.
 ### `Pages`
 
 The three pages of the project are found in the routes: \
-/
-/reset-password
+/ \
+/reset-password \
 /upgrade-plan
