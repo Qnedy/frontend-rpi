@@ -3,8 +3,6 @@ import React from 'react';
 import Inputs from '../components/Inputs';
 import Buttons from '../components/Buttons';
 
-import userIcon from '../assets/images/global/username-icon.svg';
-import passwordIcon from '../assets/images/global/password-icon.svg';
 import upgradePlanIllustration from '../assets/images/upgrade-plan-screen/upgrade-plan.svg';
 
 import * as styled from './styles/styles';
@@ -19,13 +17,26 @@ const UpgradePlanScreen = () => {
       </styled.PageHeader>
 
       <form onSubmit={() => {}} >
-        <Inputs mode="normal-without-icon" placeholder="Card Number" customClass="margin-bottom-36" />
+        <Inputs 
+          mode="normal-without-icon" 
+          placeholder="Card Number" 
+          customClass="margin-bottom-36" 
+          required={true}
+        />
 
         <div className="margin-bottom-36">
           <div className="flex-container-column">
             <div className="flex-container input--48-width">
-              <Inputs mode="normal-without-icon" placeholder="MM/YY" />
-              <Inputs mode="normal-without-icon" placeholder="CVV" />
+              <Inputs 
+                mode="normal-without-icon" 
+                placeholder="MM/YY" required={true}
+              />
+
+              <Inputs 
+                mode="normal-without-icon" 
+                placeholder="CVV" 
+                required={true}
+              />
             </div>
             
             <div className="container--flex-end">
@@ -33,7 +44,12 @@ const UpgradePlanScreen = () => {
             </div>
           </div>
 
-          <Inputs mode="normal-without-icon" placeholder="ZIP/Postal Code" customClass="margin-top-15"/>
+          <Inputs 
+            mode="normal-without-icon" 
+            placeholder="ZIP/Postal Code" 
+            customClass="margin-top-15" 
+            required={true}
+          />
         </div>
 
         <Buttons mode="important" label="upgrade" type="submit" customClass="margin-top-15" />

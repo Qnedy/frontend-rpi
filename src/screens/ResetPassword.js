@@ -1,15 +1,17 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 
 import Inputs from '../components/Inputs';
 import Buttons from '../components/Buttons';
 
 import userIcon from '../assets/images/global/username-icon.svg';
-import passwordIcon from '../assets/images/global/password-icon.svg';
 import resetPasswordIllustration from '../assets/images/reset-password-screen/reset-password.svg';
 
 import * as styled from './styles/styles';
 
 const ResetPasswordScreen = () => {
+  const history = useHistory();
+  
   return (
     <styled.Container>
       <styled.PageHeader>
@@ -18,13 +20,19 @@ const ResetPasswordScreen = () => {
       </styled.PageHeader>
 
       <form onSubmit={() => {}} >
-        <Inputs mode="normal" placeholder="example@example.com" icon={userIcon} altIcon="user icon" customClass="margin-bottom-36" />
+        <Inputs 
+          mode="normal" 
+          placeholder="example@example.com" 
+          icon={userIcon} 
+          customClass="margin-bottom-36" 
+          required={true}
+        />
 
         <Buttons mode="main" label="reset" type="submit" customClass="margin-top-15" />
       </form>
 
       <styled.PageFooter>
-        <p className="margin-bottom-36">Already have an account? <Buttons mode="simple-text" label="Login here" /></p>
+        <p className="margin-bottom-36">Already have an account? <Buttons mode="simple-text" label="Login here" handler={() => history.push('/')}/></p>
       </styled.PageFooter>
     </styled.Container>
   )

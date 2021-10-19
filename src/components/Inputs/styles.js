@@ -19,7 +19,7 @@ export const InputContainer = styled.div`
       color: ${(props) => props.theme.textColors.third};
     }
     
-    &:focus {
+    &:focus, &:valid {
       border: 1px solid ${(props) => props.theme.textColors.secondary};
       color: ${(props) => props.theme.textColors.secondary};
       transition: all .2s ease-in-out;
