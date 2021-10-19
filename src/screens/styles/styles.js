@@ -9,6 +9,8 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  animation: fadeIn .2s ease-in-out forwards;
 
   form {
     width: 100%;
@@ -18,6 +20,12 @@ export const Container = styled.div`
 
   @media screen and (max-height: 750px) {
     padding: 5% 0;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
   }
 `;
 
