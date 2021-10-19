@@ -13,7 +13,7 @@ const LoginScreen = () => {
   return (
     <styled.Container>
       <styled.PageHeader>
-        <img src={loginIllustration} alt="woman logging in" />
+        <img src={loginIllustration} alt="woman logging in" className="margin-bottom-36" />
         <h4 className="title">Welcome Back!</h4>
       </styled.PageHeader>
 
