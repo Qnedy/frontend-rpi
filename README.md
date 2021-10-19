@@ -23,3 +23,9 @@ The three pages of the project are found in the routes: \
 / \
 /reset-password \
 /upgrade-plan
+
+
+## Available Branches
+
+main - worked for 4 hour to delivery the test goals\
+improvements-after-4-hours - just some improvements to looks better taking advantage of the 1 hour left
